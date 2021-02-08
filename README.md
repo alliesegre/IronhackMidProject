@@ -2,7 +2,7 @@
 
 This repository contains the group project by the ... team for the Ironhack Mid-Bootcamp Project.
 
-#Team
+# Team
 BootCamp : Ironhack Berlin Data Analytics Full-Time January Cohort
 Alice
 Arabella 

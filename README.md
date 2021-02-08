@@ -9,16 +9,23 @@ Arabella
 Dina
 Oliver
 
-#Code and Resources Used
+# Code and Resources Used
+..
 
-#SQL
+# SQL
+..
 
-#Data Cleaning
+# Data Cleaning
+..
 
-#EDA
+# EDA
+ ..
  
-#Model Building
+# Model Building
+..
 
-#Model performance
+# Model performance
+..
 
-#Visualization
+# Visualization
+..

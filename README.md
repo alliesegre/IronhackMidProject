@@ -10,11 +10,9 @@ Dina
 Oliver
 <br/>
 # Code and Resources Used
-..
-<br/>
-# SQL
-..
-<br/>
+- Python Version: 3.7 <br/>
+- Packages: pandas, numpy, sklearn, matplotlib, seaborn <br/>
+
 # Data Cleaning
 We needed to clean up the data to make it usable for our model. We worked in two teams, splitting categoricals and numericals
 categoricals:

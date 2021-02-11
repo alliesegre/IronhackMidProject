@@ -21,12 +21,10 @@ categoricals:
 <br/>
 - Numericals:
 Selected Average, and the Quarterly Balances as our numericals
-Replaced null values with the median
-<br/>
+Replaced null values with the median <br/>
 - Categoricals:
 Applied a loop that checks the number of unique values in the column and based on this number splits the columns into numericals and categoricals. We used 10 as a threshold (less than 10 unique values -> categorical). <br/>
-No null values in the categorical columns
-<br/>
+No null values in the categorical columns <br/>
 
 # EDA
 We looked at:

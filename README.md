@@ -19,11 +19,11 @@ Oliver
 We needed to clean up the data to make it usable for our model. We worked in two teams, splitting categoricals and numericals
 categoricals:
 <br/>
-Numericals:
+- Numericals:
 Selected Average, and the Quarterly Balances as our numericals
 Replaced null values with the median
 <br/>
-Categoricals:
+- Categoricals:
 Applied a loop that checks the number of unique values in the column and based on this number splits the columns into numericals and categoricals. We used 10 as a threshold (less than 10 unique values -> categorical). <br/>
 No null values in the categorical columns
 <br/>
@@ -47,12 +47,9 @@ Removing outliers: <br/>
  +1 for q3 <br/>
  Boxplots to check distributions <br/>
 
-Transformation:<br/>
- Square Root transformation for ‘min’ and q3_balance <br/>
-Encoding: <br/>
- OneHot Encoder <br/>
-Scaling: <br/>
- Normalization <br/>
+Transformation:Square Root transformation for ‘min’ and q3_balance <br/>
+Encoding: OneHot Encoder <br/>
+Scaling: Normalization <br/>
  
 # Model Building
 First, we transformed the data and split the data into train and test sets with a test size of 30%.

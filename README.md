@@ -1,5 +1,8 @@
 # IronhackMidProject
 
+![alt text](https://github.com/alliesegre/IronhackMidProjectOADAteam/blob/main/num_features.JPG?raw=true)
+
+
 This repository contains the group project by the ... team for the Ironhack Mid-Bootcamp Project.
 
 # Team

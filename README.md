@@ -24,47 +24,35 @@ Selected Average, and the Quarterly Balances as our numericals
 Replaced null values with the median
 <br/>
 Categoricals:
-Applied a loop that checks the number of unique values in the column and based on this number splits the columns into numericals and categoricals. We used 10 as a threshold (less than 10 unique values -> categorical). As a result we ended up with the following categorical columns:
-['offer_accepted',
- 'reward',
- 'mailer_type',
- 'income_level',
- 'bank_accounts_open',
- 'overdraft_protection',
- 'credit_rating',
- 'credit_cards_held',
- 'homes_owned',
- 'Household_size',
- 'Own_your_home']
+Applied a loop that checks the number of unique values in the column and based on this number splits the columns into numericals and categoricals. We used 10 as a threshold (less than 10 unique values -> categorical). <br/>
 No null values in the categorical columns
-
 <br/>
+
 # EDA
 We looked at:
-Multicollinearity Matrix
-VIF scores (the Quarters values were in a range of 476 - 871
-Generated 3 new columns to look for max, min, and range of quarterly values
-Final columns: Average, Max, Min, Range
-Chi-Squared on Max and Min (p=0.0)
-Applied Log transformation to the 2 Numerical columns
-Possible problem with them being binomial distributions?
-Checked for multicollinearity between the categorical variables.
-We run the chi2 test on each combination of 2 categorical variables
+Multicollinearity Matrix <br/>
+VIF scores (the Quarters values were in a range of 476 - 871 <br/>
+Generated 3 new columns to look for max, min, and range of quarterly values <br/>
+Final columns: Average, Max, Min, Range <br/>
+Chi-Squared on Max and Min (p=0.0)<br/> <br/>
+Applied Log transformation to the 2 Numerical columns <br/>
+Possible problem with them being binomial distributions? <br/>
+Checked for multicollinearity between the categorical variables. <br/>
+We run the chi2 test on each combination of 2 categorical variables. <br/>
 
-<br/>
 # Transformation
-Removing outliers:
- Using IQR limit setting
- + 1.5 for average_balance and min
- +1 for q3
- Boxplots to check distributions
+Removing outliers: <br/>
+ Using IQR limit setting <br/>
+ + 1.5 for average_balance and min <br/>
+ +1 for q3 <br/>
+ Boxplots to check distributions <br/>
 
-Transformation:
- Square Root transformation for ‘min’ and q3_balance
-Encoding:
- OneHot Encoder
-Scaling:
- Normalization
+Transformation:<br/>
+ Square Root transformation for ‘min’ and q3_balance <br/>
+Encoding: <br/>
+ OneHot Encoder <br/>
+Scaling: <br/>
+ Normalization <br/>
  
 # Model Building
 First, we transformed the data and split the data into train and test sets with a test size of 30%.
